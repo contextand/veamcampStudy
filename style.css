@@ -6,6 +6,14 @@ p {
 }
 
 /* Typography */
+:root {
+  font-size: 62.5%; /*10px*/
+}
+
+body {
+  font-size: 1.4rem;
+}
+
 h1 {
   font-size: inherit;
   font-weight: inherit;
@@ -15,6 +23,8 @@ h1 {
 :root {
   --background-color: midnightblue;
   --normal-color: dodgerblue;
+  --primary-color: lightgreen;
+  --secondary-color: salmon;
 }
 
 /* Layyouts */
@@ -31,13 +41,24 @@ body {
 
 .header {
   display: flex;
-  padding: 20px 0;
+  padding: 2rem 0;
+  align-items: center;
 }
 
 .header-title {
-  background-color: orange;
+  font-size: 6rem;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+
+.header-title strong {
+  display: block;
+  color: var(--primary-color);
 }
 
 .header-meta {
-  background-color: orangered;
+  font-size: 2rem;
 }
