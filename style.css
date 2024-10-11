@@ -1,8 +1,15 @@
 /* Reset */
 body,
 h1,
+h2,
+ol,
 p {
   margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Typography */
@@ -14,7 +21,8 @@ body {
   font-size: 1.4rem;
 }
 
-h1 {
+h1,
+h2 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -72,4 +80,21 @@ body {
   background-color: currentColor;
   width: 2rem;
   height: 2px;
+}
+
+.timeline li {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.parts {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.parts-times {
+  background-color: orange;
+}
+
+.parts-contents {
+  background-color: orangered;s
 }
